@@ -130,15 +130,15 @@ header {
     padding: 20px 0px;
     display: flex;
     gap: 30px;
-   align-content: center;
+ min-height: 50vh;
    align-items: center;
    justify-content: center;
-   background-color: white;
-   width: 100%;
+   background-color: #dfdce3;
+   
 }
 
 .chool-layout {
-    background-color: #dfdce3;
+    background-color: #eeeeee;
     padding: 10px;
     justify-content: center;
     text-align: center;
@@ -149,8 +149,7 @@ header {
 
 .chool-layout p {
     margin-top: 2em;
-    color: white;
-    font-weight: 800;
+    font-weight: bold;
 }
 .gambar-layout {
     width: 200px;
@@ -165,7 +164,6 @@ header {
     padding: 12px;
     color: white;
     margin: 5px;
-    border: none;
     border-radius: 10px;
 }
 footer {
@@ -191,30 +189,65 @@ justify-content: center;
 
 .logo-icon i {
     font-size: 40px;
-    color: #f7b733;
-    border: 2px solid #d28e06;
+    color: white;
+    border: 2px solid #f7b733;
     border-radius: 100%;
     cursor: pointer;
     padding: 4px;
 }
 
 .logo-icon i:hover {
-    font-weight: 800;
-    color: white;
     background-color:#d28e06;
     transition: all .3s ease 0s;
 }
 
+/* Lay 4 */
+.text-lay-4 {
+    background-color: #4abdac;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+    font-size: 1.2em ;
+}
+ 
+.class-lay-4  {
+background-color: #dfdce3;
+   display: flex;
+   gap: 50px;
+   padding: 40px;
+   justify-content: center;
+   border-radius: 20px 0px;
+   min-height: 50vh;
+}
+
+.lay-4-div-img {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 20%;
+}
+
+.lay-4-div-img p {
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.lay-4-img {
+    width: 150px;
+}
 
 @media screen and (max-width:1000px) {
     .header-div {
     flex-direction: column;
     } 
 
-
     .header-div h1 {
         text-align: center;
     }
+
     .nav-div {
         flex-direction: column;
        text-align: center;
@@ -227,6 +260,7 @@ justify-content: center;
     .tombol-div {
         margin: 5px;
     }
+
     .keseluruhan {
         flex-direction: column-reverse;
         display: flex;
@@ -254,16 +288,22 @@ justify-content: center;
     .chool-layout{
       width: 100%;
         border-radius: 0;
-      
     }
 
+    .class-lay-4 {
+      flex-direction: column;
+   
+ gap: 0;
+ padding: 0;
+   }
+
+   .lay-4-div-img {
+    border-radius: 0;
+   }
+
+}
    @media screen and (max-width:310px) {
-    .header-div {
-       
-    }
-
     .nav-div ul {
         flex-direction: column;
     }
    }
-}
